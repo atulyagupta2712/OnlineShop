@@ -1,0 +1,125 @@
+.show{
+    display: block;
+
+}
+.hide{
+    display: none;
+}
+.size{
+    height: 50%;
+    width: 50%;
+}
+.spanSize{
+    font-size: 25px;
+    font-family: 'Satisfy', cursive;
+    color: purple;
+    display: block;
+}
+li{
+    height: 30%;
+    width: 30%;
+    display: inline-block;
+    border: 2px solid rgba(160,32,40,0.2);
+    text-align: center;
+    margin: 1%;
+}
+h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    color: purple;
+}
+h3{
+    font-family: 'Boogaloo', cursive;
+    font-size: 50px;
+    
+}
+.cart{
+    font-family: 'Satisfy', cursive;
+    font-size: 22px;
+    color: purple;
+    /* background-color: bisque; */
+}
+h4{
+    font-size: 40px;
+    font-family: 'Boogaloo', cursive;
+}
+@media(max-width: 600px){
+    #best_sellers .spanSize{
+        font-size: 20px;
+    }
+}
+@media(max-width: 480px){
+    #best_sellers li{
+        width: 45%;
+    }
+    #best_sellers .cart{
+   
+        font-size: 15px;
+      
+    }
+    h3{
+        font-size: 40px;
+    }
+    #best_sellers .size{
+        height: 80%;
+        width: 80%;
+    }
+}
+#myCart li{
+    width: 100%;
+   
+}
+#myCart li .spanSize{
+    display: inline-block;
+    font-size: 20px;
+}
+
+#myCart li .price{
+    display: none;
+}
+#myCart li .image{
+    width: 30%;
+    height: 30%;
+    display: inline-block;
+}
+
+
+
+@media(max-width: 768px){
+    #myCart li{
+        position: relative;
+        height: 70px;
+    }
+   
+    #myCart li .image{
+        position: absolute;
+        width: 18%;
+        height: 80px;
+        left: 0px;
+        
+        /* text-align: left; */
+        /* text-align: end; */
+        /* margin-right: 32%; */
+    }
+    #myCart li .spanSize{
+        text-align: center;
+        margin-top: 1%;
+        font-size: 28px;
+    }
+    #myCart .cart{
+     position: absolute;
+     right: 2%;
+     top: 22%;
+     vertical-align: middle;
+       
+    }
+}
+@media(max-width: 470px){
+    #myCart li .spanSize{
+        margin-top: 3%;
+        font-size: 20px;
+    }
+    #myCart .cart{
+        font-size: 15px;
+    }
+}

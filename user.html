@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hey user</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Lobster|Patrick+Hand" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="assets/javascript/utils.js"></script>
+    <script src="assets/javascript/class.js"></script>
+    <script src="assets/javascript/db/userDB.js"></script>
+    <script src="assets/javascript/controllers/userController.js"></script>
+</head>
+<body>
+        <div class="container-fluid">
+   
+                   <div class="welcome">
+                          
+                      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Register</a>
+                            </li>
+                        
+                        </ul>
+                          <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div id="form-div">
+                                            <div class="form-group">
+                                                   <h4>Enter your userid  <input type="number" id="form-number"></h4>
+                                                </div>
+                                        <div class="form-group">
+                                            <label for="">Email Address</label>
+                                            <input type="email" placeholder="Enter email address..." id="login-email">
+                                        </div>
+                                       <div class="form-group">
+                                        <label for="">password</label>
+                                        <input type="password" placeholder="Enter password here..." id="login-password">
+                                       </div>
+                                       <div class="form-group">
+                                        <input type="submit" class="submit" id="login-submit">
+                                        <h3 id="message" class="text-center red"></h3>
+                                        
+                                       </div>
+                                    </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div id="register-div">
+                                            <h4>Your userId is <button id="rid"></button></h4>
+                                           <!-- <button id="pid"></button> -->
+                                        <div class="form-group">
+                                            <label for="">Name</label>
+                                            <input type="text" placeholder="Enter your name..." id="name">
+                                        </div>
+                                       
+                                        <div class="form-group">
+                                            <label for="">Mobile number</label>
+                                            <input type="number" placeholder="Enter your mobile number" id="mobile" maxlength="10">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">E-mail Address</label>
+                                            <input type="email" placeholder="Enter your email address.." id="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Password</label>
+                                            <input type="password" placeholder="Enter your password..." id="password">
+                                        </div>
+                                       <div class="form-group">
+                                        <input type="submit" class="submit" id="register-submit">
+                                       </div>
+                                       <div>
+                                           <h3 id="register-message" class="text-center red"></h3>
+                                       </div>
+                                      
+                                    </div>
+                                  </div>
+                            </div>
+                   </div>
+        </div>
+                <!-- <button class="btn-primary" id="login">Login</button>
+                <button class="btn-primary" id="register">Register</button> -->
+    <script src="assets/javascript/jquery.min.js"></script>
+   <script src="assets/javascript/bootstrap.min.js"></script>
+</body>
+</html>

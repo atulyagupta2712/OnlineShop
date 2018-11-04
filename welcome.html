@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome user</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/design.css">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Satisfy" rel="stylesheet">
+    
+     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="assets/javascript/utils.js"></script>
+    <script src="assets/javascript/class.js"></script>
+    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/controllers/welcomecontroller.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+
+   <h1 class="text-center">Welcome <span id="name"></span></h1> 
+   <h3 class="text-center">Here comes our best collection of shoes!</h3>
+   <div class="row">
+     <div class="col-md-9">
+        <ul id="best_sellers"> 
+            <!-- <h4>Best sellers</h4> -->
+        </ul>
+     </div>
+     <div class="col-md-3">
+        <h4 class="text-center">Your shopping cart</h4>
+        <!-- <button class="btn btn-secondary w-50 save">Save Cart</button> -->
+         <ul id="myCart" class="text-center"> 
+          
+         </ul>
+     </div>
+   
+     
+   </div>
+   
+</div>
+</body>
+</html>

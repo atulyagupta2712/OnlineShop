@@ -1,0 +1,71 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    background-image: url('http://www.mellowwalk.com/wp-content/uploads/2016/12/mw_website_slideshow2-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.welcome{
+    background-color: lightgray;
+    border: 2px solid black;
+    width: 45%;
+    /* height: 450px; */
+    margin-top: 8%;
+    margin-left: 3%;
+    padding: 1%;
+}
+ul{
+    margin-left: 25%;
+}
+a{
+    font-size: 25px;
+    font-family: 'Courgette', cursive;
+}
+#form-number{
+    width: 7%;
+}
+.form-group{
+    font-size: 20px;
+    font-family: 'Patrick Hand', cursive;
+}
+.red{
+    color: red;
+}
+.submit{
+    margin-left: 40%;
+}
+
+@media(max-width: 700px){
+    .welcome{
+        width: 60%;
+    }
+    ul{
+        margin-left: 15%;
+    }
+    #form-number{
+        width: 12%;
+    }
+}
+@media(max-width: 512px){
+    .welcome{
+        width: 80%;
+    }
+}
+@media(max-width: 412px){
+    .welcome{
+        width: 95%;
+    }
+    ul{
+        margin-left: 10%;
+    }
+    a{
+        font-size: 22px;
+    }
+    .form-group{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/wlcmAdmin.css">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Lobster|Patrick+Hand" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="assets/javascript/utils.js"></script>
+    <script src="assets/javascript/class.js"></script>
+    <script src="assets/javascript/db/wlcmDb.js"></script>
+    <script src="assets/javascript/controllers/wlcmAdminController.js"></script>
+    <title>Welcome Admin</title>
+
+</head>
+<body>
+    <div class="container-fluid">
+    <h1 class="text-center">Enter the details of your shoes</h1>
+   <h2> Your product id is <button id="productId"></button></h2>
+    <div class="form-group">
+        <label for="">Name</label>
+        <input type="text" placeholder="Enter the name of the product.." id="product-name">
+    </div>
+    <div class="form-group">
+        <label for="">Price</label>
+    <input type="text" placeholder="Enter the price of the product..." id="price">
+</div>
+<div class="form-group">
+    <label for="">URL</label>
+    <input type="url" placeholder="Enter the url of the product.." id="url">
+</div>
+<button id="add" class="btn btn-primary">Add</button>
+<button id="search" class="btn btn-warning">Search</button>
+<button id="searchAll" class="btn btn-success">Search All</button>
+<div id="showhide">
+    <input type="number" placeholder="Enter the id of the product to be searched" id="searchId">
+</div>
+<div id="result"></div>
+<fieldset>
+    <legend>ProductDetails</legend>
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Url</th>
+                <th>Delete</th>
+                <!-- <th>Update</th> -->
+            </tr>
+        </thead>
+        <tbody id="productList">
+
+        </tbody>
+    </table>
+</fieldset>
+
+    </div>
+   
+</body>
+</html>

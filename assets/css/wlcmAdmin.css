@@ -1,0 +1,79 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.show{
+    display: block;
+
+}
+.hide{
+    display: none;
+}
+h1{
+    font-family: 'Vidaloka', serif;
+    color: purple;
+}
+label{
+    font-size: 25px;
+    font-family: 'Patrick Hand', cursive;
+}
+input{
+    width: 60%;
+}
+
+button{
+    margin-left: 15%;
+}
+
+#productId{
+    margin-left: 1%;
+}
+#showhide{
+    margin-top: 2%;
+}
+legend{
+    font-family: 'Vidaloka', serif;
+    color: purple;
+    font-size: 33px;
+    text-align: center;
+   
+}
+#result{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 21px;
+}
+fieldset{
+    margin-top: 5%;
+}
+.icon{
+    height: 50px;
+    
+}
+table{
+    width: 100%;
+}
+
+@media(max-width: 1200px){
+    h1{
+        font-size: 30px;
+    }
+    label{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 22px;
+    }
+}
+@media(max-width: 450px){
+    h1{
+        font-size: 28px;
+    }
+    button{
+        margin: 3%;
+    }
+    input{
+        width: 80%;
+    }
+}
