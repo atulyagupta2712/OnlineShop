@@ -80,7 +80,7 @@ h2{
         font-size: 20px;
     }
 }
-@media(max-width: 330px){
+@media(max-width: 370px){
     .whoAreYou{
         margin-top: 13%;
         width: 70%;
