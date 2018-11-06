@@ -19,9 +19,7 @@ label{
     font-size: 25px;
     font-family: 'Patrick Hand', cursive;
 }
-input{
-    width: 60%;
-}
+
 
 button{
     margin-left: 15%;
@@ -51,9 +49,7 @@ fieldset{
     height: 50px;
     
 }
-table{
-    width: 100%;
-}
+
 
 @media(max-width: 1200px){
     h1{
@@ -73,7 +69,5 @@ table{
     button{
         margin: 3%;
     }
-    input{
-        width: 80%;
-    }
+ 
 }
